@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>HTML CSS JavaScript Practical Codes</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 40px;
+}
+
+.practical {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2563eb;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #444;
+}
+
+pre {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>HTML, CSS & JavaScript Practical Codes</h1>
+
+<div class="practical">
+
+<h2>Practical 1 — Basic Webpage</h2>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My Basic Webpage&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;
+&lt;p&gt;This is a basic webpage created using HTML tags.&lt;br&gt;
+HTML stands for HyperText Markup Language.&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;About Me&lt;/h2&gt;
+&lt;p&gt;My name is Student. I am learning web development.&lt;/p&gt;
+
+&lt;h3&gt;Text Formatting&lt;/h3&gt;
+&lt;p&gt;&lt;b&gt;Bold&lt;/b&gt; &lt;i&gt;Italic&lt;/i&gt; &lt;u&gt;Underline&lt;/u&gt;&lt;/p&gt;
+
+&lt;h2&gt;My Hobbies&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Reading&lt;/li&gt;
+&lt;li&gt;Programming&lt;/li&gt;
+&lt;li&gt;Music&lt;/li&gt;
+&lt;li&gt;Sports&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Programming Languages&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;li&gt;Java&lt;/li&gt;
+&lt;li&gt;C++&lt;/li&gt;
+&lt;li&gt;JavaScript&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2&gt;Useful Link&lt;/h2&gt;
+&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;
+
+&lt;h2&gt;Student Information&lt;/h2&gt;
+&lt;table border="1"&gt;
+&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Course&lt;/th&gt;&lt;th&gt;Year&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Student 1&lt;/td&gt;&lt;td&gt;Computer Science&lt;/td&gt;&lt;td&gt;Third&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;Student 2&lt;/td&gt;&lt;td&gt;Information Technology&lt;/td&gt;&lt;td&gt;Third&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;h2&gt;Contact Form&lt;/h2&gt;
+&lt;form&gt;
+Name: &lt;input type="text"&gt;&lt;br&gt;&lt;br&gt;
+Email: &lt;input type="email"&gt;&lt;br&gt;&lt;br&gt;
+Message:&lt;br&gt;&lt;textarea&gt;&lt;/textarea&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;input type="reset" value="Reset"&gt;
+&lt;/form&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</div>
+
+<div class="practical">
+
+<h2>Practical 2 — Student Registration Form</h2>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Student Registration Form&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Student Registration Form&lt;/h1&gt;
+
+&lt;form&gt;
+
+&lt;fieldset&gt;
+&lt;legend&gt;Personal Information&lt;/legend&gt;
+
+First Name:
+&lt;input type="text" placeholder="Enter first name" required&gt;&lt;br&gt;&lt;br&gt;
+
+Last Name:
+&lt;input type="text" placeholder="Enter last name" required&gt;&lt;br&gt;&lt;br&gt;
+
+Date of Birth:
+&lt;input type="date" required&gt;&lt;br&gt;&lt;br&gt;
+
+Gender:
+&lt;input type="radio" name="gender"&gt;Male
+&lt;input type="radio" name="gender"&gt;Female
+&lt;input type="radio" name="gender"&gt;Other
+
+&lt;/fieldset&gt;&lt;br&gt;
+
+&lt;fieldset&gt;
+&lt;legend&gt;Contact Information&lt;/legend&gt;
+
+Email:
+&lt;input type="email" placeholder="example@email.com" required&gt;&lt;br&gt;&lt;br&gt;
+
+Mobile Number:
+&lt;input type="tel" placeholder="Enter mobile number" required&gt;&lt;br&gt;&lt;br&gt;
+
+Address:&lt;br&gt;
+&lt;textarea rows="4" cols="40"&gt;&lt;/textarea&gt;
+
+&lt;/fieldset&gt;&lt;br&gt;
+
+&lt;fieldset&gt;
+&lt;legend&gt;Course Information&lt;/legend&gt;
+
+Select Course:
+&lt;select&gt;
+&lt;option&gt;-- Select Course --&lt;/option&gt;
+&lt;option&gt;BCA&lt;/option&gt;
+&lt;option&gt;B.Sc.&lt;/option&gt;
+&lt;option&gt;B.Tech&lt;/option&gt;
+&lt;option&gt;BBA&lt;/option&gt;
+&lt;option&gt;MCA&lt;/option&gt;
+&lt;/select&gt;&lt;br&gt;&lt;br&gt;
+
+Subjects Interested In:&lt;br&gt;
+&lt;input type="checkbox"&gt;Python&lt;br&gt;
+&lt;input type="checkbox"&gt;Java&lt;br&gt;
+&lt;input type="checkbox"&gt;Web Development&lt;br&gt;
+&lt;input type="checkbox"&gt;Machine Learning
+
+&lt;/fieldset&gt;&lt;br&gt;
+
+&lt;fieldset&gt;
+&lt;legend&gt;Login Information&lt;/legend&gt;
+
+Username:
+&lt;input type="text" required&gt;&lt;br&gt;&lt;br&gt;
+
+Password:
+&lt;input type="password" required&gt;&lt;br&gt;&lt;br&gt;
+
+Confirm Password:
+&lt;input type="password" required&gt;
+
+&lt;/fieldset&gt;&lt;br&gt;
+
+&lt;input type="submit" value="Register"&gt;
+&lt;input type="reset" value="Reset"&gt;
+
+&lt;/form&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</div>
+
+<div class="practical">
+
+<h2>Practical 3 — CSS Webpage</h2>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My Website&lt;/title&gt;
+&lt;link rel="stylesheet" href="style.css"&gt;
+
+&lt;style&gt;
+h1 {
+    text-align:center;
+    color:blue;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+
+&lt;p&gt;This webpage is styled using CSS.&lt;/p&gt;
+
+&lt;div class="box"&gt;
+HTML, CSS and JavaScript
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+/* style.css */
+
+body {
+    font-family: Arial;
+    background-color: #f2f2f2;
+}
+
+p {
+    text-align: center;
+    font-size: 18px;
+}
+
+.box {
+    width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+}
+</code></pre>
+
+</div>
+
+<div class="practical">
+
+<h2>Practical 4 — Navigation Menu</h2>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Navigation Menu&lt;/title&gt;
+
+&lt;style&gt;
+body {
+    margin:0;
+    font-family:Arial;
+}
+
+nav {
+    background:#1e293b;
+}
+
+ul {
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    margin:0;
+    padding:0;
+}
+
+li {
+    position:relative;
+}
+
+a {
+    display:block;
+    color:white;
+    text-decoration:none;
+    padding:18px 25px;
+}
+
+a:hover {
+    background:#2563eb;
+}
+
+.dropdown {
+    display:none;
+    position:absolute;
+    background:#1e293b;
+}
+
+li:hover .dropdown {
+    display:block;
+}
+&lt;/style&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;nav&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;
+&lt;a href="#"&gt;Courses&lt;/a&gt;
+&lt;ul class="dropdown"&gt;
+&lt;li&gt;&lt;a href="#"&gt;Web Development&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;Python&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;Machine Learning&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;h1 style="text-align:center;"&gt;Welcome to My Website&lt;/h1&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</div>
+
+<div class="practical">
+
+<h2>Practical 5 — Multimedia Webpage</h2>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Multimedia Webpage&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;Multimedia Webpage&lt;/h1&gt;
+
+&lt;h2&gt;Image&lt;/h2&gt;
+&lt;img src="image.jpg" width="400"&gt;
+
+&lt;h2&gt;Audio&lt;/h2&gt;
+&lt;audio controls&gt;
+&lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+
+&lt;h2&gt;Video&lt;/h2&gt;
+&lt;video width="500" controls&gt;
+&lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+
+&lt;h2&gt;Useful Links&lt;/h2&gt;
+
+&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;&lt;br&gt;
+&lt;a href="https://www.wikipedia.org"&gt;Wikipedia&lt;/a&gt;&lt;br&gt;
+&lt;a href="mailto:example@email.com"&gt;Send an Email&lt;/a&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</div>
+
+<div class="practical">
+
+<h2>Practical 6 — Form Validation</h2>
+
+<pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Form Validation&lt;/title&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;h1&gt;Registration Form&lt;/h1&gt;
+
+&lt;form onsubmit="return validate()"&gt;
+
+Name:
+&lt;input type="text" id="name"&gt;&lt;br&gt;&lt;br&gt;
+
+Email:
+&lt;input type="text" id="email"&gt;&lt;br&gt;&lt;br&gt;
+
+Mobile:
+&lt;input type="text" id="mobile"&gt;&lt;br&gt;&lt;br&gt;
+
+Password:
+&lt;input type="password" id="password"&gt;&lt;br&gt;&lt;br&gt;
+
+Confirm Password:
+&lt;input type="password" id="confirm"&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;button&gt;Register&lt;/button&gt;
+
+&lt;/form&gt;
+
+&lt;script&gt;
+function validate() {
+
+let name = document.getElementById("name").value;
+let email = document.getElementById("email").value;
+let mobile = document.getElementById("mobile").value;
+let password = document.getElementById("password").value;
+let confirm = document.getElementById("confirm").value;
+
+if(name=="") {
+    alert("Please enter your name.");
+    return false;
+}
+
+if(!email.includes("@")) {
+    alert("Please enter a valid email.");
+    return false;
+}
+
+if(!/^[0-9]{10}$/.test(mobile)) {
+    alert("Mobile number must contain 10 digits.");
+    return false;
+}
+
+if(password.length &lt; 6) {
+    alert("Password must contain at least 6 characters.");
+    return false;
+}
+
+if(password != confirm) {
+    alert("Passwords do not match.");
+    return false;
+}
+
+alert("Registration successful!");
+return true;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+</div>
+
+</div>
+
+</body>
+</html>
